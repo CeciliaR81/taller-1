@@ -1,0 +1,307 @@
+body {
+    background-image: url(../imagenes/opciones\ bb.jpeg);
+    margin: 0%;
+    padding: 0%;  
+    background-repeat: no-repeat;
+}
+
+*{
+    margin:  0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: borde-box;
+     }
+    
+    header{
+        width: 200%;
+        height: 200px;
+        /* background: palevioletred;*/
+        background-image: url(../imagenes/fondo\ paginas.jpg);
+    }
+    
+    /*imagen*/
+    #seriefav {
+        width: 150px;
+        height: 150px;
+        margin: 15px;
+        border-radius: 50%;
+        box-shadow: 5px 5px 6px rgba(200, 79, 49, 0.973);
+        
+        
+    }
+    
+    #nombre1 {
+        position: absolute;
+        top: 80px;
+        left: 170px;
+        margin-left: 30px;
+        font-size: 30px;
+        color:#bf9b46;
+        font-family: "Dancing Script", cursive;
+    }
+    /*contact*/
+    
+    .etiquetas
+    {
+        position: absolute;
+        top: 50px;
+        left: 70%;
+        font-size: 30px;
+        color: rgb(227, 46, 18);
+        padding: 1px;
+        
+    }
+    .form-register {
+        width:50%;
+        margin: auto;
+        font-family: "Dancing Script", cursive;
+        background-color: rgb(181, 212, 212);
+        padding: 30px;
+        margin-top: 100px;
+        border-radius: 4px;
+        color: rgb(83, 96, 96);
+     
+     }
+     .form-register h1{
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+     .form-register label{
+        display: block;
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 50px;
+     }
+
+     .form-register  input[type="text"],
+     .form-register input[type="email"],
+     .form-register select {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;  
+     }
+     .form-register input[type="checkbox"] {
+        margin-right: 5px;
+      }
+      
+      .form-register input[type="button"] {
+        background-color: #d89906;
+        color: rgb(229, 213, 186);
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      
+      .form-register input[type="button"]:hover {
+        background-color: #afb33c;
+        }
+    
+    .niveles {
+        display: inline;
+        color:#45b40d;
+        font-family: "Dancing Script", cursive;
+    }
+    
+    h1 {
+        font-family: "Dancing Script", cursive;
+        text-align: center;  
+        font-size: 100px;
+        color: #431805;
+    }
+    #definicion {
+    font-size: 25px;
+    margin: 10px;
+    color: rgb(211, 38, 182);
+    margin-right: 20px;
+    
+    }
+    
+    #ham1 {
+        position: relative;
+        width: 320px;
+        height: 250px;
+        flex-direction: row;
+        margin-right: 15px;
+        border-radius: 10px;
+        float:right;
+        bottom: 100%;
+        margin-top: 100px;
+        padding: 2%;
+    
+    }
+    
+    #ham1:hover{
+        box-shadow: 10px 10px 12px #03045e; 
+    
+    
+    }
+    #definition {
+        font-size: 25px;
+        margin: 10px;
+        color: rgb(221, 12, 197);
+        margin-right: 20px;
+        
+        }
+
+    #ham2 {
+        position: relative;
+        width: 320px;
+        height: 250px;
+        flex-direction: row;
+        margin-right: 15px;
+        border-radius: 10px;
+        float:right;
+        bottom: 100%;
+        margin-top: 100px;
+        padding: 2%;
+    
+    
+
+    }
+    #ham2:hover{
+       
+        box-shadow: 10px 10px 12px #03045e; 
+         
+    }
+    .container{
+        display: flex;
+        flex-direction:row;
+        justify-content: center;
+        margin: 0;
+       
+
+    }
+
+    .def1{
+        padding-right: 200px;
+
+    }
+    /* tarjetas..*/
+
+    .contenedor{
+        display: flex;
+    }
+
+    .tarjet {
+        position:relative;
+        width: 100px;
+        height: 380px;
+        margin: auto; 
+
+    }
+    .tarjet img {
+        width:30px ;
+        margin: 5px;
+    }
+    .tarjet .face{
+        position: absolute;
+        width: 300px;
+        height: 100%;
+        backface-visibility: hidden;
+        border-radius: 15px;
+        margin: 15px;
+        overflow: hidden;
+        transition: .5s;
+
+    }
+
+    .tarjet .front {
+        transform: perspective(600px) rotateY(0deg);
+        box-shadow: 0 5px 10px #b50808;
+        transform: translate(-15px);
+    
+    }
+    .tarjet .front .img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+
+    }
+    .tarjet .front h3 {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 45px;
+        line-height: 45px;
+        color: #fff;
+        background: rgba(0,0,0,.4);
+        text-align: center;
+        font-weight: 600;
+    }
+    
+    .tarjet .back {
+        transform: perspective(600px) rotateY(180deg);
+        background: rgb(19, 20, 20);
+        padding: 15px;
+        color: #f3f3f3;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: center;
+        box-shadow: 0 5px 10px #000;
+
+    }
+    
+    .tarjet .back .link {
+        border-top: solid 1px #f3f3f3;
+        height: 50px;
+        line-height: 50px;
+
+    }
+    
+    .tarjet .back a {
+        color: #f0e9e9;
+    }
+    
+    .tarjet .back h3 {
+        font-size: 30px;
+        margin-top: 20px;
+        letter-spacing: 2px;
+    }
+    
+    .tarjet .back p {
+       /* letter-spacing: 1px;*/
+        font-size: medium;
+        font-style: italic;
+        letter-spacing: 1px;
+        margin-left: 10%;
+        margin-right: 10%;
+    } 
+    
+    
+    .tarjet:hover .front {
+        transform: perspective(600px) rotateY(180deg);
+        margin-top: 100px;
+    }
+    .tarjet:hover .back{
+        transform: perspective(600px) rotateY(360deg);
+    }
+    
+    
+
+   #fot {
+        width: 110%;
+        height: 40px;
+      /*  background-color: #993372;*/
+      background-image: url(../imagenes/fondo\ paginas.jpg);
+        text-align: center;
+    }
+    #iconos{
+        color: rgb(59, 18, 182);
+        width: 90px;
+        height: 30px;
+        margin-top: 10px;
+
+    }
+    @media (min-widdth:768px){
+
+    }
+    
+
+
+    
